@@ -23,3 +23,16 @@ generate component
 g -> generate
 c -> components
 ng g c components/dashboard
+
+recative experience -> UI should react to any changes in the data
+subject to observation 
+
+to install redux 
+npm i @ngrx/store @ngrx/store-devtools @ngrx/effects @ngrx/entity 
+
+function fro dispatch(action) -> something just happened
+ and select(function) -> 
+ 
+ * install redux tool in chrome, redux tab, 
+ 
+ Redux number increment
