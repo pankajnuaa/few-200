@@ -16,7 +16,7 @@ export class TipCalculatorComponent implements OnInit {
   }
 
   updateAmount(amount: number) {
-
+    console.log(amount);
     this.amount = amount;
   }
 

@@ -1,0 +1,25 @@
+Redux....
+C:\Users\ITUStudent>npm i -g @angular/cli
+
+extentions
+Angular Language Service
+Debugger for Chrome
+EditorConfig for VS Code
+TSLint
+
+
+create new project 
+ng new few200
+
+-ng serve --> uses webpack and compiles
+*ctrl + p -> to open the search
+ng build --prod=true  --> to build production code, create tiniest, most optimized app
+
+component in angular ->  a typescrypt class that is responsible for a part of realestate in screen
+
+# template variables
+
+generate component
+g -> generate
+c -> components
+ng g c components/dashboard

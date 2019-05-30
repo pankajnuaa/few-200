@@ -1,0 +1,31 @@
+{
+  "workbench.tree.indent": 25,
+  "breadcrumbs.enabled": true,
+  "html.format.wrapAttributes": "force-aligned",
+  "explorer.openEditors.visible": 0,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.fontLigatures": false,
+  "files.autoSave": "onFocusChange",
+  "typescript.check.npmIsInstalled": true,
+  "editor.snippetSuggestions": "top",
+  "workbench.editor.labelFormat": "medium",
+  "editor.lineHeight": 24,
+  "editor.minimap.enabled": false,
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "window.zoomLevel": 0,
+  "git.enableSmartCommit": true,
+  "editor.parameterHints": false,
+  "git.autofetch": true,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground": "#ff0000"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.tslint": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.rendererType": "dom"
+}

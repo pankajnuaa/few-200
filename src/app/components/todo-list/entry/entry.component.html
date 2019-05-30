@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="item">Item</label>
+  <input type="text"
+         #pizza
+         class="form-control"
+         name="item">
+  <input type="button"
+         (click)="add(pizza)"
+         class="btn btn-success"
+         value="Add Item">
+</div>

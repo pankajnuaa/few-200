@@ -18,11 +18,8 @@ export class ToDoListComponent {
     item.completed = true;
   }
 
-  add(what: HTMLInputElement) {
-    console.log(what.value);
-    this.items.unshift({ description: what.value, completed: false });
-    what.value = '';
-    what.focus();
+  add(what: string) {
+    this.items.unshift({ description: what, completed: false });
   }
 
   clearCompleted() {
