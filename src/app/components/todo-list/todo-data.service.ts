@@ -1,5 +1,6 @@
-import { TodoListItem } from './model';
+import { TodoListItem, TodoSummary } from './model';
 import { observable, BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 export class TodoDataService {
   private data: TodoListItem[] = [
@@ -17,5 +18,16 @@ export class TodoDataService {
   add(what: string) {
     this.data = [{ description: what, completed: false }, ...this.data];
     this.todoListSubject.next(this.data);
+  }
+  getSummary(): Observable<TodoSummary> {
+    return this.todoListSubject.pipe(
+      map(list => {
+        return {
+          total: list.length,
+          completed: list.filter(f => f.completed).length,
+          incomplete: list.filter(f => !f.completed).length
+        } as TodoSummary;
+      })
+    );
   }
 }

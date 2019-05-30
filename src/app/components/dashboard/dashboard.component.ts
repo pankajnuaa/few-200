@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoDataService } from '../todo-list/todo-data.service';
+
+import { Observable } from 'rxjs';
+import { TodoSummary } from '../todo-list/model';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  summary$: Observable<TodoSummary>;
 
-  constructor() { }
+
+  constructor(private service: TodoDataService) { }
 
   ngOnInit() {
+    this.summary$ = this.service.getSummary();
+
   }
 
 }
