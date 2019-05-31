@@ -1,3 +1,6 @@
+https://github.com/JeffryGonzalez/few200-may-19
+\\ND435528\dev
+
 Redux....
 C:\Users\ITUStudent>npm i -g @angular/cli
 
@@ -45,3 +48,12 @@ https://gist.github.com/btroncone/a6e4347326749f938510
 select - if you wanna change something in screen and dispatch
 
 effects
+
+https://www.learnrxjs.io/operators/
+*************************************************
+this is for assignment
+
+create feature module
+
+ng g m features/shopping
+ng g c features/shopping/shopping --flat=true
