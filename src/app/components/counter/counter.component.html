@@ -3,6 +3,7 @@
   <input type="button"
          class="btn btn-primary btn-sm"
          value="-"
+         [disabled]="cantDecrement$ | async"
          (click)="decrement()">
   <input type="button"
          class="btn btn-primary btn-sm"
@@ -12,4 +13,24 @@
 <input type="button"
        class="btn btn-primary "
        value="RESET"
-       (click)="reset()">
+       (click)="reset()"
+       [disabled]="selectAtStart$ | async">
+
+<div class="btn-group"
+     role="group"
+     aria-label="Basic example">
+  <button type="button"
+          (click)="setCountBy(1)"
+          [disabled]="(by$ | async) === 1"
+          class="btn btn-secondary">1</button>
+  <button type="button"
+          (click)="setCountBy(3)"
+          [disabled]="(by$ | async) === 3"
+          class="btn btn-secondary">3</button>
+  <button type="button"
+          (click)="setCountBy(5)"
+          [disabled]="(by$ | async) === 5"
+          class="btn btn-secondary">5</button>
+</div>
+
+<pre>{{by$ | async | json}}</pre>
