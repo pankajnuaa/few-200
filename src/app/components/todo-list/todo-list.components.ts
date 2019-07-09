@@ -32,6 +32,7 @@ export class ToDoListComponent implements OnInit, OnDestroy {
   markComplete(item: TodoListItem) {
     // item.completed = true;
     //  call the service
+    this.service.markCompleted(item);
 
   }
 

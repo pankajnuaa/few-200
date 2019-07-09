@@ -5,6 +5,8 @@ import { ToDoListComponent } from './components/todo-list/todo-list.components';
 import { TipCalculatorComponent } from './components/tip-calculator/tip-calculator.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ShoppingComponent } from './features/shopping/shopping.component';
+import { BooklistComponent } from './features/booklist/booklist.component';
+import { LibraryComponent } from './features/library/library.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,13 @@ const routes: Routes = [
   }, {
     path: 'shopping',
     component: ShoppingComponent
+  }, {
+    path: 'bookslist',
+    component: BooklistComponent
+  },
+  {
+    path: 'library',
+    component: LibraryComponent
   },
   {
     path: '**',

@@ -15,8 +15,17 @@ export class TodoDataService {
     return observable;
   }
 
+  markCompleted(item: TodoListItem) {
+    for (const value of this.data) {
+      if (value.description === item.description) {
+        value.completed = true;
+      }
+    }
+    this.todoListSubject.next(this.data);
+  }
+
   add(what: string) {
-    this.data = [{ description: what, completed: false }, ...this.data];
+    this.data = [{ description: what, completed: false }, ...this.data]; // adding new item in the list
     this.todoListSubject.next(this.data);
   }
   getSummary(): Observable<TodoSummary> {

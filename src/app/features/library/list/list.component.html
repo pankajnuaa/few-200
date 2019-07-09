@@ -1,0 +1,29 @@
+<table class="table">
+
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Format</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of library">
+
+    <tr>
+      <td>
+
+        <span>
+          <input type="button"
+                 class="btn btn-danger btn-sm"
+                 (click)="remove(item)"
+                 value="X">
+        </span>
+        {{item.title}}
+      </td>
+
+      <td>{{item.author}}</td>
+      <td>{{item.format.toLocaleString()}}</td>
+    </tr>
+
+  </tbody>
+</table>

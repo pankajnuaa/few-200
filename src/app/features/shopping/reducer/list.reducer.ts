@@ -16,7 +16,7 @@ const initialState: State = {
   entities: {
     1: {
       id: '1',
-      description: 'Taco Shells'
+      description: 'Taco Shells',
     },
     2: {
       id: '2',

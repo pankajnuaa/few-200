@@ -17,6 +17,8 @@ import { reducers } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { CounterEffects } from './effects/counter.effects';
 import { ShoppingModule } from './features/shopping/shopping.module';
+import { BooklistModule } from './features/booklist/booklist.module';
+import { LibraryModule } from './features/library/library.module';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,12 @@ import { ShoppingModule } from './features/shopping/shopping.module';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot(reducers),
+
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([CounterEffects]),
-    ShoppingModule
+    ShoppingModule,
+    BooklistModule,
+    LibraryModule
   ],
   providers: [TodoDataService],
   bootstrap: [AppComponent]

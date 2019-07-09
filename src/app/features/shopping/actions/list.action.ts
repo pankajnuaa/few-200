@@ -11,7 +11,7 @@ export class ItemRemoved implements Action {
 }
 export const ADD_ITEM = '[shopping] add item';
 export class ItemAdded implements Action {
-  readonly type = ADD_ITEM;
+  readonly type = '[shopping] add item';
   payload: ShoppingItemEntity;
   constructor(public what: string) {
     this.payload = {
